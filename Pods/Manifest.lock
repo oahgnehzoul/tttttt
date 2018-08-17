@@ -1,0 +1,16 @@
+PODS:
+  - PopupKit (3.1.1)
+
+DEPENDENCIES:
+  - PopupKit (~> 3.1.1)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - PopupKit
+
+SPEC CHECKSUMS:
+  PopupKit: e362ed92148d831a9c38a2bc7a25893e46d64c54
+
+PODFILE CHECKSUM: b21883c5cca11f05e9058e935307442ae6d20cc7
+
+COCOAPODS: 1.5.0
