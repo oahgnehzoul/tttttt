@@ -11,10 +11,14 @@
 		60A4835821272F94006236F7 /* PointReminderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A4835721272F94006236F7 /* PointReminderView.m */; };
 		60A4835A21273074006236F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60A4835921273073006236F7 /* Assets.xcassets */; };
 		60DC9095209AA1D800ACCCB9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 60DC9094209AA1D800ACCCB9 /* AppDelegate.m */; };
-		60DC9098209AA1D800ACCCB9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60DC9097209AA1D800ACCCB9 /* ViewController.m */; };
+		60DC9098209AA1D800ACCCB9 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 60DC9097209AA1D800ACCCB9 /* ViewController.mm */; };
 		60DC909B209AA1D800ACCCB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60DC9099209AA1D800ACCCB9 /* Main.storyboard */; };
 		60DC90A0209AA1DA00ACCCB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60DC909E209AA1DA00ACCCB9 /* LaunchScreen.storyboard */; };
 		60DC90A3209AA1DA00ACCCB9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 60DC90A2209AA1DA00ACCCB9 /* main.m */; };
+		60F22E60212B0E9000726FC9 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60F22E5F212B0E9000726FC9 /* StoreKit.framework */; };
+		60F22E63212B0EBB00726FC9 /* AppPayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F22E62212B0EBB00726FC9 /* AppPayManager.m */; };
+		60F22E66212B1B8500726FC9 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60F22E65212B1B8500726FC9 /* UserNotifications.framework */; };
+		60F22E68212B1B8D00726FC9 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60F22E67212B1B8D00726FC9 /* UserNotificationsUI.framework */; };
 		89D63843D68B7AE04635F10D /* libPods-TTTTttttt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B99EF802A40486F59170B3C /* libPods-TTTTttttt.a */; };
 /* End PBXBuildFile section */
 
@@ -29,11 +33,17 @@
 		60DC9093209AA1D800ACCCB9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		60DC9094209AA1D800ACCCB9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		60DC9096209AA1D800ACCCB9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		60DC9097209AA1D800ACCCB9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		60DC9097209AA1D800ACCCB9 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
 		60DC909A209AA1D800ACCCB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		60DC909F209AA1DA00ACCCB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		60DC90A1209AA1DA00ACCCB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		60DC90A2209AA1DA00ACCCB9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		60F22E5F212B0E9000726FC9 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		60F22E61212B0EBB00726FC9 /* AppPayManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppPayManager.h; sourceTree = "<group>"; };
+		60F22E62212B0EBB00726FC9 /* AppPayManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppPayManager.m; sourceTree = "<group>"; };
+		60F22E64212B147A00726FC9 /* TTTTttttt.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TTTTttttt.entitlements; sourceTree = "<group>"; };
+		60F22E65212B1B8500726FC9 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		60F22E67212B1B8D00726FC9 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
 		724312EB3F8D83993D057D61 /* Pods-TTTTttttt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTTTttttt.release.xcconfig"; path = "Pods/Target Support Files/Pods-TTTTttttt/Pods-TTTTttttt.release.xcconfig"; sourceTree = "<group>"; };
 		CB820BCA8347FD8A5966C54C /* Pods-TTTTttttt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTTTttttt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TTTTttttt/Pods-TTTTttttt.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -43,6 +53,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60F22E68212B1B8D00726FC9 /* UserNotificationsUI.framework in Frameworks */,
+				60F22E66212B1B8500726FC9 /* UserNotifications.framework in Frameworks */,
+				60F22E60212B0E9000726FC9 /* StoreKit.framework in Frameworks */,
 				89D63843D68B7AE04635F10D /* libPods-TTTTttttt.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -80,10 +93,13 @@
 		60DC9092209AA1D800ACCCB9 /* TTTTttttt */ = {
 			isa = PBXGroup;
 			children = (
+				60F22E64212B147A00726FC9 /* TTTTttttt.entitlements */,
 				60DC9093209AA1D800ACCCB9 /* AppDelegate.h */,
 				60DC9094209AA1D800ACCCB9 /* AppDelegate.m */,
 				60DC9096209AA1D800ACCCB9 /* ViewController.h */,
-				60DC9097209AA1D800ACCCB9 /* ViewController.m */,
+				60DC9097209AA1D800ACCCB9 /* ViewController.mm */,
+				60F22E61212B0EBB00726FC9 /* AppPayManager.h */,
+				60F22E62212B0EBB00726FC9 /* AppPayManager.m */,
 				604F8F0521273C3B00B38968 /* UIView+JWAdditions.h */,
 				604F8F0621273C3B00B38968 /* UIView+JWAdditions.m */,
 				60A4835621272F94006236F7 /* PointReminderView.h */,
@@ -100,6 +116,9 @@
 		8EAFB2F640B6295A2DE9FB03 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				60F22E67212B1B8D00726FC9 /* UserNotificationsUI.framework */,
+				60F22E65212B1B8500726FC9 /* UserNotifications.framework */,
+				60F22E5F212B0E9000726FC9 /* StoreKit.framework */,
 				5B99EF802A40486F59170B3C /* libPods-TTTTttttt.a */,
 			);
 			name = Frameworks;
@@ -137,6 +156,17 @@
 				TargetAttributes = {
 					60DC908F209AA1D800ACCCB9 = {
 						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -197,8 +227,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60DC9098209AA1D800ACCCB9 /* ViewController.m in Sources */,
+				60DC9098209AA1D800ACCCB9 /* ViewController.mm in Sources */,
 				60A4835821272F94006236F7 /* PointReminderView.m in Sources */,
+				60F22E63212B0EBB00726FC9 /* AppPayManager.m in Sources */,
 				60DC90A3209AA1DA00ACCCB9 /* main.m in Sources */,
 				60DC9095209AA1D800ACCCB9 /* AppDelegate.m in Sources */,
 				604F8F0721273C3B00B38968 /* UIView+JWAdditions.m in Sources */,
@@ -342,12 +373,19 @@
 			baseConfigurationReference = CB820BCA8347FD8A5966C54C /* Pods-TTTTttttt.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TTTTttttt/TTTTttttt.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J3Q3X3YYZ2;
 				INFOPLIST_FILE = TTTTttttt/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.oahgnehzoul.TTTTttttt;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.oahgnehzoul.tpy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -357,12 +395,18 @@
 			baseConfigurationReference = 724312EB3F8D83993D057D61 /* Pods-TTTTttttt.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TTTTttttt/TTTTttttt.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J3Q3X3YYZ2;
 				INFOPLIST_FILE = TTTTttttt/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.oahgnehzoul.TTTTttttt;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.oahgnehzoul.tpy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

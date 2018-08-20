@@ -6,5 +6,6 @@ target 'TTTTttttt' do
   # use_frameworks!
 
   # Pods for TTTTttttt
-	pod 'PopupKit', '~> 3.1.1'
+#    pod 'PopupKit', '~> 3.1.1'
+#pod 'KLCPopup', '~> 1.0'
 end

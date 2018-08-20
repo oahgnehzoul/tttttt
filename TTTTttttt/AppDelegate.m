@@ -7,8 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
-@interface AppDelegate ()
+#import <UserNotifications/UserNotifications.h>
+@interface AppDelegate ()<UNUserNotificationCenterDelegate>
 
 @end
 
@@ -17,7 +17,63 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
+    center.delegate = self;
+    [center requestAuthorizationWithOptions:(UNAuthorizationOptionSound | UNAuthorizationOptionAlert | UNAuthorizationOptionBadge) completionHandler:^(BOOL granted, NSError * _Nullable error) {
+        if (!error) {
+            [[UIApplication sharedApplication] registerForRemoteNotifications];
+        } else {
+            NSLog(@"ERROR:%@-%@",error.localizedFailureReason,error.localizedDescription);
+        }
+    }];
+    
     return YES;
+}
+
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    NSLog(@"deviceToken -- >> %@",deviceToken);
+    NSString *pushToken = [[[[deviceToken description]
+                             stringByReplacingOccurrencesOfString:@"<" withString:@""]
+                            stringByReplacingOccurrencesOfString:@">" withString:@""]
+                           stringByReplacingOccurrencesOfString:@" " withString:@""];
+    NSLog(@"token for Easy APNs Provider:%@",pushToken);
+}
+
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult result))completionHandler {
+    NSLog(@"%@",userInfo);
+    //在后台时UIApplicationStateBackground 2
+    NSLog(@"applicationState:%ld",[[UIApplication sharedApplication] applicationState]);
+    //点击推送消息进来时UIApplicationStateInactive 1
+    //在前台的时候收到消息UIApplicationStateActive 0
+    
+    //工程里设置的Background Modes 好像不起作用啊！！！？？
+    //测试的时候只和aps 里边是否有content-avaliable 有关？？
+    /*  YES
+    {
+        "aps" : {
+            "content-available" : 1,
+            "alert" : {
+                "title" : "标题测试",
+                "body" : "睡觉了睡觉了11"
+            },
+            "badge" : 9,
+            "sound" : "default"
+        }
+    }
+     */
+    
+    /*   NO
+     {
+     "aps" : {
+     "alert" : {
+     "title" : "标题测试",
+     "body" : "睡觉了睡觉了11"
+     },
+     "sound" : "default",
+     "badge" : 9
+     }
+     }
+     */
 }
 
 

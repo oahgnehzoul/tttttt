@@ -8,7 +8,8 @@
 
 #import "ViewController.h"
 #import "PointReminderView.h"
-#import "PopupView.h"
+//#import "PopupView.h"
+//#import "KLCPopup.h"
 
 @interface ViewController ()<UIWebViewDelegate>
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
@@ -43,6 +44,12 @@
     
 //    self.view.backgroundColor = [UIColor yellowColor];
     
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn.frame = CGRectMake(0, 0, 100, 100);
+    btn.backgroundColor = [UIColor redColor];
+    [self.view addSubview:btn];
+    [btn addTarget:self action:@selector(btnAction:) forControlEvents:UIControlEventTouchUpInside];
+    
     PointReminderView *view = [[PointReminderView alloc] initWithFrame:CGRectMake(0,100, self.view.frame.size.width, 68)];
     PointReminderModel *model = [PointReminderModel new];
     model.title = @"恭喜您！666生日积分已到账！";
@@ -50,10 +57,23 @@
     model.type = PointReminderTypeNormal;
     [view setModel:model];
 //    [self.view addSubview:view];
-    PopupView *popup = [PopupView popupViewWithContentView:view showType:PopupViewShowTypeSlideInFromBottom dismissType:PopupViewDismissTypeFadeOut maskType:PopupViewMaskTypeClear shouldDismissOnBackgroundTouch:NO shouldDismissOnContentTouch:NO];
-    [popup show];
+//    KLCPopup *popup = [KLCPopup popupViewWithContentView:view showType:PopupViewShowTypeSlideInFromBottom dismissType:PopupViewDismissTypeFadeOut maskType:PopupViewMaskTypeNone shouldDismissOnBackgroundTouch:NO shouldDismissOnContentTouch:NO];
+//    KLCPopup *popup = [KLCPopup popupWithContentView:view showType:KLCPopupShowTypeSlideInFromBottom dismissType:KLCPopupDismissTypeFadeOut maskType:KLCPopupMaskTypeNone dismissOnBackgroundTouch:NO dismissOnContentTouch:NO];
+//    [popup show];
+    
+    [self.view addSubview:view];
+    view.frame = CGRectMake(0, [UIScreen mainScreen].bounds.size.height, [UIScreen mainScreen].bounds.size.width, 68);
+
+    [UIView animateKeyframesWithDuration:0.3 delay:0 options:(7 << 16) animations:^{
+        view.frame = CGRectMake(0,729 - 68, self.view.frame.size.width, 68);
+    } completion:nil];
 }
 
+- (void)btnAction:(UIButton *)btn {
+    NSLog(@"btnAction");
+    
+    
+}
 
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
     
