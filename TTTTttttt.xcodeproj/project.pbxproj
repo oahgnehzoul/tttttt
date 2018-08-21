@@ -10,6 +10,7 @@
 		604F8F0721273C3B00B38968 /* UIView+JWAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 604F8F0621273C3B00B38968 /* UIView+JWAdditions.m */; };
 		60A4835821272F94006236F7 /* PointReminderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A4835721272F94006236F7 /* PointReminderView.m */; };
 		60A4835A21273074006236F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60A4835921273073006236F7 /* Assets.xcassets */; };
+		60D7AA71212C5BD400ABDF55 /* PointRemindManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 60D7AA70212C5BD400ABDF55 /* PointRemindManager.m */; };
 		60DC9095209AA1D800ACCCB9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 60DC9094209AA1D800ACCCB9 /* AppDelegate.m */; };
 		60DC9098209AA1D800ACCCB9 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 60DC9097209AA1D800ACCCB9 /* ViewController.mm */; };
 		60DC909B209AA1D800ACCCB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60DC9099209AA1D800ACCCB9 /* Main.storyboard */; };
@@ -29,6 +30,8 @@
 		60A4835621272F94006236F7 /* PointReminderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PointReminderView.h; sourceTree = "<group>"; };
 		60A4835721272F94006236F7 /* PointReminderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PointReminderView.m; sourceTree = "<group>"; };
 		60A4835921273073006236F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		60D7AA6F212C5BD400ABDF55 /* PointRemindManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PointRemindManager.h; sourceTree = "<group>"; };
+		60D7AA70212C5BD400ABDF55 /* PointRemindManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PointRemindManager.m; sourceTree = "<group>"; };
 		60DC9090209AA1D800ACCCB9 /* TTTTttttt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTTTttttt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60DC9093209AA1D800ACCCB9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		60DC9094209AA1D800ACCCB9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -98,6 +101,8 @@
 				60DC9094209AA1D800ACCCB9 /* AppDelegate.m */,
 				60DC9096209AA1D800ACCCB9 /* ViewController.h */,
 				60DC9097209AA1D800ACCCB9 /* ViewController.mm */,
+				60D7AA6F212C5BD400ABDF55 /* PointRemindManager.h */,
+				60D7AA70212C5BD400ABDF55 /* PointRemindManager.m */,
 				60F22E61212B0EBB00726FC9 /* AppPayManager.h */,
 				60F22E62212B0EBB00726FC9 /* AppPayManager.m */,
 				604F8F0521273C3B00B38968 /* UIView+JWAdditions.h */,
@@ -158,7 +163,7 @@
 						CreatedOnToolsVersion = 9.3;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
-								enabled = 0;
+								enabled = 1;
 							};
 							com.apple.InAppPurchase = {
 								enabled = 1;
@@ -230,6 +235,7 @@
 				60DC9098209AA1D800ACCCB9 /* ViewController.mm in Sources */,
 				60A4835821272F94006236F7 /* PointReminderView.m in Sources */,
 				60F22E63212B0EBB00726FC9 /* AppPayManager.m in Sources */,
+				60D7AA71212C5BD400ABDF55 /* PointRemindManager.m in Sources */,
 				60DC90A3209AA1DA00ACCCB9 /* main.m in Sources */,
 				60DC9095209AA1D800ACCCB9 /* AppDelegate.m in Sources */,
 				604F8F0721273C3B00B38968 /* UIView+JWAdditions.m in Sources */,
