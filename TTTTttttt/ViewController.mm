@@ -20,7 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+//    11112222
     /*
     NSDate *date = [NSDate date];//零时区时间，不受手机所在地区影响,但如果手机自定义修改了时间，会影响
     NSLog(@"零区时间 = %@", date);
