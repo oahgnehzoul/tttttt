@@ -10,6 +10,7 @@
 		604F8F0721273C3B00B38968 /* UIView+JWAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 604F8F0621273C3B00B38968 /* UIView+JWAdditions.m */; };
 		60A4835821272F94006236F7 /* PointReminderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A4835721272F94006236F7 /* PointReminderView.m */; };
 		60A4835A21273074006236F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60A4835921273073006236F7 /* Assets.xcassets */; };
+		60A77E1724ED7EF60051465B /* 中金财富开户全量IOSSDK20200726.zip in Resources */ = {isa = PBXBuildFile; fileRef = 60A77E1624ED7EF60051465B /* 中金财富开户全量IOSSDK20200726.zip */; };
 		60D7AA71212C5BD400ABDF55 /* PointRemindManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 60D7AA70212C5BD400ABDF55 /* PointRemindManager.m */; };
 		60DC9095209AA1D800ACCCB9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 60DC9094209AA1D800ACCCB9 /* AppDelegate.m */; };
 		60DC9098209AA1D800ACCCB9 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 60DC9097209AA1D800ACCCB9 /* ViewController.mm */; };
@@ -30,6 +31,7 @@
 		60A4835621272F94006236F7 /* PointReminderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PointReminderView.h; sourceTree = "<group>"; };
 		60A4835721272F94006236F7 /* PointReminderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PointReminderView.m; sourceTree = "<group>"; };
 		60A4835921273073006236F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		60A77E1624ED7EF60051465B /* 中金财富开户全量IOSSDK20200726.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = "中金财富开户全量IOSSDK20200726.zip"; sourceTree = "<group>"; };
 		60D7AA6F212C5BD400ABDF55 /* PointRemindManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PointRemindManager.h; sourceTree = "<group>"; };
 		60D7AA70212C5BD400ABDF55 /* PointRemindManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PointRemindManager.m; sourceTree = "<group>"; };
 		60DC9090209AA1D800ACCCB9 /* TTTTttttt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTTTttttt.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				60F22E64212B147A00726FC9 /* TTTTttttt.entitlements */,
+				60A77E1624ED7EF60051465B /* 中金财富开户全量IOSSDK20200726.zip */,
 				60DC9093209AA1D800ACCCB9 /* AppDelegate.h */,
 				60DC9094209AA1D800ACCCB9 /* AppDelegate.m */,
 				60DC9096209AA1D800ACCCB9 /* ViewController.h */,
@@ -199,6 +202,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				60DC90A0209AA1DA00ACCCB9 /* LaunchScreen.storyboard in Resources */,
+				60A77E1724ED7EF60051465B /* 中金财富开户全量IOSSDK20200726.zip in Resources */,
 				60A4835A21273074006236F7 /* Assets.xcassets in Resources */,
 				60DC909B209AA1D800ACCCB9 /* Main.storyboard in Resources */,
 			);
